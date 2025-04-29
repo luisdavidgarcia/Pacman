@@ -20,6 +20,7 @@ public:
   void update(Maze& maze);
 
   void draw() const;
+  void drawScore() const;
   
   void onCollision();
 
@@ -27,7 +28,7 @@ public:
   int getScore() const { return score; }
   int getLives() const { return lives; }
 
-  void setPosition(float x, float y) { position = { x, y}; }
+  void setPosition(float x, float y) { position = { x, y }; }
   void setVelocity(float vx, float vy) { velocity = { vx, vy }; }
   void setSpeed(int newSpeed) { speed = newSpeed; }
   void increaseScore(int amount) { score += amount; }

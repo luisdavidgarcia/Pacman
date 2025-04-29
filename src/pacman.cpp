@@ -44,7 +44,13 @@ void Pacman::draw() const
   float angleStart = 45.0f;
   float angleEnd = 315.0f;
 
-  DrawCircleSector(position, radius,angleStart, angleEnd, 30, YELLOW);
+  DrawCircleSector(position, radius, angleStart, angleEnd, 30, YELLOW);
+  // TODO based on direction flip orientation
+}
+
+void Pacman::drawScore() const
+{
+  DrawText(TextFormat("Score: %i", score), 10, 750, 20, WHITE); 
 }
 
 void Pacman::onCollision()
