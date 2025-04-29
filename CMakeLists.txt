@@ -15,6 +15,7 @@ add_executable(${PROJECT_NAME}
   src/main.cpp
   src/pacman.cpp
   src/Maze.cpp
+  src/Ghost.cpp
 )
 
 # --- Include paths ---
